@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderQuantityCounter", "Ord
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargeOrderAlertService", "LargeOrderAlertService\LargeOrderAlertService.csproj", "{10A51606-63BE-48C5-A2D7-6AA351EA0883}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB42AF12-5FEA-437B-8358-7C9002923B05}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
