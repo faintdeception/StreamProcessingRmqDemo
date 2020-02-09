@@ -26,10 +26,10 @@ The default credentials for this image *should* be guest/guest.
 Feel free to poke around the tabs, there shouldn't be any activity but you can see that RMQ starts off with a number of default queues and the overview tab is nice.
 
 #### Overview
-![Overview](https://picsum.photos/0 "Overview")
+![Overview](https://zachruffin.com/media/Blog/PostImages/StreamProcessing/Rmq%20Overview.jpg "Overview")
 
 #### Default Exchanges
-![Default Exchanges](https://picsum.photos/0 "Overview")
+![Default Exchanges](https://zachruffin.com/media/Blog/PostImages/StreamProcessing/RmqDefaultExchanges.jpg "Overview")
 
 ## DotNet Core
 For this demo we'll be using .net core 3.1 which, as of this writing, is the latest version of .net core, you can grab that [here](https://dotnet.microsoft.com/download/dotnet-core/3.1).
