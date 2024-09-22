@@ -33,7 +33,7 @@ namespace OrderQuantityCounter
         private static void Consumer_Received(object sender, BasicDeliverEventArgs ea)
         {
             var body = ea.Body;
-            var message = Encoding.UTF8.GetString(body);
+            var message = Encoding.UTF8.GetString(body.Span);
 
             dynamic orderEvent = JsonConvert.DeserializeObject(message);
 
@@ -222,12 +222,12 @@ namespace OrderQuantityCounter
 
         private static void Consumer_ConsumerCancelled(object sender, ConsumerEventArgs e)
         {
-            Log.Information($"Consumer canceled. ConsumerTag:{e.ConsumerTag}.");
+            Log.Information($"Consumer canceled. ConsumerTag:{e.ConsumerTags}.");
         }
 
         private static void Consumer_Unregistered(object sender, ConsumerEventArgs e)
         {
-            Log.Information($"Consumer unregistered. ConsumerTag:{e.ConsumerTag}.");
+            Log.Information($"Consumer unregistered. ConsumerTag:{e.ConsumerTags}.");
         }
 
         private static void Consumer_Shutdown(object sender, ShutdownEventArgs e)
@@ -237,7 +237,7 @@ namespace OrderQuantityCounter
 
         private static void Consumer_Registered(object sender, ConsumerEventArgs e)
         {
-            Log.Information($"Consumer registered. ConsumerTag:{e.ConsumerTag}.");
+            Log.Information($"Consumer registered. ConsumerTag:{e.ConsumerTags}.");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
